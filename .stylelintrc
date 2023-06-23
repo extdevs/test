@@ -1,0 +1,20 @@
+{
+    "extends": [
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-prettier"
+    ],
+    "rules": {
+        "rule-empty-line-before": null,
+        "comment-empty-line-before": null,
+        "selector-no-qualifying-type": null,
+        "selector-max-compound-selectors": null,
+        "property-no-vendor-prefix": null,
+        "length-zero-no-unit": null,
+        "selector-pseudo-element-colon-notation": null,
+        "selector-class-pattern": null,
+        "declaration-property-value-disallowed-list": null,
+        "color-named": null,
+        "color-hex-length": null,
+        "order/properties-alphabetical-order": null
+    }
+}

@@ -1,0 +1,83 @@
+.site-header {
+	position: fixed;
+	top:0;
+	left:0;
+	right: 0;
+	//width: 100%;
+	padding: 15px 0;
+	background-color: $black;
+	z-index: 99;
+	transition: background-color .3s ease, box-shadow .3s ease;
+	@include media-breakpoint-up(lg) {
+		padding: 30px 15px;
+	}
+
+	&.scrolled {
+		box-shadow: -3px -3px 6px 8px rgba(0, 0, 0, 0.05);
+		background-color: black;
+		padding: 15px 0;
+
+		.header-logo{
+			// Turn on the header resize on desktop
+			@include media-breakpoint-up(lg) {
+				width: 70px; 
+			}
+		}
+	}
+
+	.header-logo{
+		transition: width 0.3s ease;
+		width: 55px;
+		@include media-breakpoint-up(lg) {
+			width: 89px;
+		}
+		img{
+			transition: width 0.3s ease;
+			// Default to small scrolled size on mobile
+			width: $header-scrolled-width;
+
+			// Turn on the header resize on desktop
+			@include media-breakpoint-up(lg) {
+				width: $header-starting-width;
+			}
+		}
+	}
+	.phone-text{
+		color:$white;
+		text-transform: uppercase;
+	}
+
+	.header-phone {
+		line-height: 1.2;
+
+		.phone-icon {
+			background:$secondary;
+			width: 42px;
+			padding:10px;
+			border-radius: 1px;
+			img,
+			svg {
+				width: 100%;
+			}
+		}
+
+		// Got questions 
+		span {
+			font-size: 11px;
+			@include media-breakpoint-up(lg) {
+				font-size: 14px;
+			}
+		}
+		
+		// Phone number text
+		em {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			@include media-breakpoint-up(lg) {
+				font-size: 21px;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,64 @@
+.accordion {
+	width: 100%;
+
+	&__item{
+		margin-bottom: 2rem;
+	}
+
+	&__title {
+		cursor: pointer;
+		background: $light;
+		transition: color 300ms ease, background 300ms ease;
+		position: relative;
+		font-weight: 700;
+		color: $dark;
+		padding: 3rem;
+		
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 7px 7px 0;
+			border-color: $dark transparent transparent;
+			transition: border-color 300ms ease, transform 300ms ease;
+			display: block;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			@include media-breakpoint-up(lg){
+				border-width: 10px 10px 0;
+				right: 25px;
+			}
+		}
+
+		&.active,
+		&:hover{
+			background: $dark;
+			color:#FFF;
+
+			&:after{
+				border-color: #ffffff transparent transparent;
+			}
+		}
+
+		&.active{
+			&:after{
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+	}
+
+	&__content {
+		height: 0;
+		overflow: hidden;
+		transition: height 300ms ease;
+
+		&__inner{
+			padding: 20px;
+		}
+	}
+}
+

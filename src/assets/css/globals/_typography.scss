@@ -1,0 +1,244 @@
+// --------------------
+// Include Fonts Here
+// --------------------
+/*
+@font-face {
+  font-family: "Averta";
+  src: url("../fonts/Averta-Regular.woff2") format("woff2"),
+    url("../fonts/Averta-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Averta";
+  src: url("../fonts/Averta-Bold.woff2") format("woff2"),
+    url("../fonts/Averta-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+*/
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
+        url('../fonts/ClashDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Kalam';
+    src: url('../fonts/Kalam-Regular.woff2') format('woff2'),
+        url('../fonts/Kalam-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif Semi';
+    src: url('../fonts/Biotif-Regular.woff2') format('woff2'),
+        url('../fonts/Biotif-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-Medium.woff2') format('woff2'),
+        url('../fonts/Biotif-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-SemiBold.woff2') format('woff2'),
+        url('../fonts/Biotif-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-Bold.woff2') format('woff2'),
+        url('../fonts/Biotif-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Biotif';
+    src: url('../fonts/Biotif-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Biotif-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+$headings-font: 'Biotif', sans-serif;
+$body-font: 'Biotif', sans-serif;
+
+// --------------------
+//  Include Basic Typography
+// --------------------
+
+:root {
+	font-size: 50%; //1rem = 8px
+	@include media-breakpoint-up(md) {
+		font-size: 56.25%; //1rem = 9px
+	}
+	@include media-breakpoint-up(lg) {
+		font-size: 62.5%; // 1rem = 10px
+	}
+}
+
+html,
+body {
+	@include font-smoothing('on');
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: $body-font;
+	color: $body-color;
+	font-weight: 400;
+	@include media-breakpoint-up(md) {
+		font-size: 1.8rem;
+	}
+}
+
+.wrapper{
+	position: relative;
+	overflow: hidden;
+}
+
+p {
+	margin-bottom: 1.6rem;
+	font-weight: 400;
+	margin: 0 0 30px;
+	letter-spacing: 0.48px;
+	@include media-breakpoint-up(md) {
+		letter-spacing: 0;
+	}
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+// Headline padding
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	line-height: 1.1;
+	margin-bottom: 30px;
+	font-family: $headings-font;
+	font-weight: bold;
+	text-transform: capitalize;
+	@include media-breakpoint-up(lg) {
+		letter-spacing:-0.09rem;
+	}
+}
+
+h1,
+.h1 {
+	font-size: 30px;
+	@include media-breakpoint-up(lg) {
+		font-size: 5.2rem; 
+	}
+}
+
+h2,
+.h2 {
+	font-size: 30px; 
+	@include media-breakpoint-up(lg) {
+		font-size: 4.0rem; 
+	}
+}
+
+h3,
+.h3 {
+	font-size: 22px;
+	@include media-breakpoint-up(lg) {
+		font-size: 2.4rem; 
+	}
+}
+
+h4,
+.h4 {
+	font-size: 18px;
+	@include media-breakpoint-up(lg) {
+		font-size: 26px;  
+	} 
+}
+
+h5,
+.h5 {
+	font-size: 2rem; 
+}
+
+h6,
+.h6 {
+	font-size: 1.8rem; 
+}
+
+strong {
+	font-family: $headings-font;
+}
+
+// Hero Specific Font Sizes
+.eyebrow {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	color: $secondary;
+	letter-spacing: 0.30em;
+	margin: 0 0 10px !important; 
+	@include media-breakpoint-up(md) {
+		letter-spacing: 0.2em;
+		font-size: 16px;
+		margin: 0 0 8px !important; 
+	}
+}
+
+.subheadline { 
+	font-size: 2.2rem;
+	color: black;
+	margin-bottom: 60px;
+}
+
+.font-weight {
+	&-extra-bold{
+		font-weight: 800;
+	}
+	&-bold{
+		font-weight: 700;
+	}
+	&-semi-bold{
+		font-weight: 600;
+	}
+	&-medium {
+		font-weight: 500;
+	}
+	&-light {
+		font-weight: 300;
+	}
+	&-normal {
+		font-weight: 400;
+	}
+}
+

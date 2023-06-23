@@ -1,0 +1,35 @@
+@import 'globals/typography';
+@import 'vendor/bootstrap/bootstrap.scss';
+
+/* purgecss start ignore */
+/* stylelint-disable indentation */
+@import 'globals/variables';
+@import 'globals/animation';
+@import 'globals/mixins';
+@import 'globals/common';
+
+// Specific Sections
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/steps';
+@import 'sections/marquee';
+
+// Reusable Components
+@import 'components/accordion';
+@import 'components/button';
+@import 'components/checklist';
+@import 'components/form';
+@import 'components/popup';
+@import 'components/progressbar';
+@import 'components/swiper-slider';
+@import 'components/table';
+@import 'components/thankyou-popup';
+/* stylelint-enable */
+/* purgecss end ignore */
+
+//pages
+@import 'pages/home';
+@import 'pages/ebook';
+@import 'pages/without-training';
+@import 'pages/thankyou';
+@import 'pages/calendy';

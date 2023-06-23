@@ -1,0 +1,28 @@
+body.without-training {
+	.section-ebookhero{
+		padding-bottom: 30px;
+		h1{
+			@include media-breakpoint-up(xl) {
+				padding-right: 180px;
+				margin: 0 0 15px;
+			}
+		}
+
+	}
+	.section-featuredin{
+		padding-bottom: 20px;
+		.video-container{
+			@include media-breakpoint-up(down) {
+				border:none;
+				margin: 0 -22px;
+				padding-bottom: 65.25%;
+			}
+		}
+		.info-text{
+			p{
+				margin-bottom: 50px;
+			}
+		}
+	}
+	
+}

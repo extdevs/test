@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifBlackRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifBlackRegular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif Semi';
+    src: url('FONTSPRINGDEMO-BiotifSemiBoldRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifSemiBoldRegular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifExtraBoldRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifExtraBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifMediumRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifMediumRegular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifLightRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifLightRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FONTSPRING DEMO - Biotif';
+    src: url('FONTSPRINGDEMO-BiotifBoldRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-BiotifBoldRegular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,14 @@
+body.thank-you-page {
+	background: $black;
+	color:$white;
+	.hero-centered {
+		padding-top: 150px;
+		min-height: 50vh;
+		@include media-breakpoint-up(lg) {
+			min-height: 95vh;
+		}
+	}
+	p{
+		color:$white;
+	}
+}

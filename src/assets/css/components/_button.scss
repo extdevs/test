@@ -1,0 +1,108 @@
+// --------------------
+// BUTTON STYLE
+//---------------------
+
+.btn,
+button,
+input[type='submit'],
+input[type='button'] {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	border: 0;
+	border-radius: 50px;
+	margin-bottom: 12px;
+	font-size: 12px;
+	line-height: 1;
+	text-transform: uppercase;
+	padding:20px;
+	white-space: normal;
+	cursor: pointer;
+	background: $primary;
+	color: white;
+	transition: background-color 0.4s ease-in-out;
+	font-weight: 800;
+	@include media-breakpoint-up(lg) {
+		padding: 29px 17px;
+		font-size: 19px;
+	}
+	&.btn-white{
+		background:$white;
+		color: $black;
+		&:hover,
+		&:focus,
+		&:active {
+			background: darken($white, 20%);
+			text-decoration: none;
+			color:$black;
+		}
+	}
+	&.btn-black{
+		background: $black;
+		color: $white;
+		font-size: 14px; 
+		padding:20px 30px;
+		min-width: 200px;
+		line-height: 1.25;
+		@include media-breakpoint-up(md) {
+			font-size: 18px; 
+		}
+		@include media-breakpoint-up(lg) {
+			min-width: 289px;
+		}
+	}
+	&.btn-secondary{
+		background: $secondary;
+		color:$black;
+		padding:12px 22px;
+		text-transform: lowercase;
+		min-width: 150px;
+		font-size: 14px;
+		@include media-breakpoint-up(lg) {
+			min-width: 186px;
+			font-size: 18px;
+		}
+	}
+	&.btn-popup{
+		background: $secondary;
+		color:$black;
+		padding:30px 15px;
+		text-transform: uppercase;
+		min-width: 220px;
+		margin-top: 25px;
+		font-weight: 800;
+		width: 100%; 
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: lighten($primary, 20%);
+		text-decoration: none;
+		color:$white;
+	}
+}
+
+.btn-section { 
+	max-width: 310px; 
+	@include media-breakpoint-up(lg) {
+		max-width: 447px;
+		min-width: 447px;
+	}
+	p {
+		text-align: center;
+		margin: 0 auto;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 1.95;
+		max-width: 89%;
+		@include media-breakpoint-up(lg) {
+			font-size: 14px;
+			line-height: 1.25;
+			max-width: 85%;
+		}
+		span{
+			font-weight: 800;
+		}
+	}
+}

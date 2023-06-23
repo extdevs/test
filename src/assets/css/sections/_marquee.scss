@@ -1,0 +1,35 @@
+.section-marquee{
+	overflow: hidden;
+	user-select: none;
+
+	ul {
+		flex-shrink: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		min-width: 100%;
+		animation: scroll-x 30s linear infinite;
+		list-style: none;
+
+		li{
+			padding: 1rem 3rem;
+			background: #000;
+			color:#FFF;
+		}
+	}
+
+	.reverse {
+		ul {
+			animation-direction: reverse;
+		}
+	}
+}
+
+@keyframes scroll-x {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX( calc(-100% - 2rem));
+	}
+}

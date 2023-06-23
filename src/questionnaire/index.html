@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="#### DESCRIPTION HERE ####">
+    <meta name="robots" content="noindex">
+
+    <title>#### REPLACE ME ####</title>
+</head>
+<body class="questionnaire-page">
+
+<header class="site-header">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="header-logo">
+                <icon width="120" src="logo.svg"></icon>
+            </div>
+            <a href="tel:XXXXXXXXXX" class="header-phone d-flex align-items-center" title="phone">
+                <div class="phone-icon me-md-3">
+                    <icon src="icon-phone.svg"></icon>
+                </div>
+                <div class="phone-text d-none d-md-flex flex-column">
+                    <span>Got Questions?</span>
+                    <em>XX XXXX XXXX</em>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- QUESTIONNAIRE SECTION -->
+<section class="questionnaire" id="questionnaire">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <p class="h4 eyebrow">SPOTS FOR <span class="dyn-month">this month</span> ARE NEARLY GONE!</p>
+                <h1>LOCK IN YOUR FREE, ZERO-RISK, 30-MINUTE HOME SELLING CONSULTATION NOW</h1>
+            </div>
+            <div class="col-md-8 col-lg-6 text-center">
+                <p> Simply take 2 minutes to fill in this form and you’ll take the first step towards discovering how to sell your home for it’s maximum price, in minimum time. </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="questionnaire_form-wrapper text-center justify-content-center">
+                    
+                    <form is="multi-step" action="" method="post" autocomplete="off">
+                        <ol class="counter d-none">
+                            <!-- HTML in JS -->
+                        <li class="active"></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ol>
+                        <hr>
+                        <step-item valid="false" index="0" class="active">
+                            <label for="name">WHAT IS YOUR NAME?</label>
+                            <input type="text" name="fullname" placeholder="Name*" data-map="nameget" data-validate="basic" data-error="Please ensure this field has a value." style=""><div class="field-error hidden">Please ensure this field has a value.</div>
+            
+                            <div class="button-wrap d-flex ">
+                                <input type="button" class="btn btn-primary  w-100" value="Next" data-next="">
+                            </div>
+            
+                        </step-item>
+                        <step-item class="step" valid="false" index="1">
+                            <label class="mb-4 nowrap" for="email">THANKS <span data-receive="nameget"></span>, what is your email address?</label>
+                            <input type="text" name="email" placeholder="Email Address*" data-validate="email" data-error="Please ensure the entered email is correct."><div class="field-error hidden">Please ensure the entered email is correct.</div>
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary " value="Back" data-prev="">
+                                <input type="button" class="btn btn-primary " value="Next" data-next="">
+                            </div>
+                        </step-item>
+                        <step-item valid="false" index="2">
+                            <label class="mb-4" for="phone">and your phone number?</label>
+                            <input type="tel" name="phone" placeholder="Phone Number*" data-validate="phone" data-error="Please enter your phone number."><div class="field-error hidden">Please enter your phone number.</div>
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary " value="Back" data-prev="">
+                                <input type="button" class="btn btn-primary " value="Next" data-next="">
+                            </div>
+                        </step-item>
+                        <step-item class="step" valid="false" index="3">
+                            <label class="mb-4" for="field[1]">Do you have an idea of what you want?</label>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[1]" data-nicename="Yes, I know exactly what I want" value="Yes, I know exactly what I want" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[1]" data-nicename="No, but I have some ideas" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[1]" data-error="Please select an option." data-nicename="I have no clue (help!)" value="I have no clue (help!)" data-validate="radio">
+                            </div><div class="field-error hidden">Please select an option.</div>
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary " value="Back" data-prev="">
+                                <input type="button" class="btn btn-primary " value="Next" data-next="">
+                            </div>
+                        </step-item>
+                        <step-item class="step" valid="false" index="4">
+                            <label class="mb-4" for="field[2]">How did you want to meet with us?</label>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[2]" data-nicename="By myself as the giver" value="By myself as the giver" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[2]" data-nicename="By myself as the receiver" value="By myself as the receiver" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[2]" data-nicename="Together as a couple" value="Together as a couple" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[2]" data-error="Please select an option." data-nicename="By myself with a family member" value="By myself with a family member" data-validate="radio">
+                            </div><div class="field-error hidden">Please select an option.</div>
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary " value="Back" data-prev="">
+                                <input type="button" class="btn btn-primary " value="Next" data-next="">
+                            </div>
+                        </step-item>
+                        <step-item class="step" valid="false" index="5">
+                            <label class="mb-4" for="field[3]">What is your ideal budget?</label>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[3]" data-nicename="$0 - $5000" value="$0 - $5000" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[3]" data-nicename="$5000 - $10,000" value="$5000 - $10,000" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[3]" data-nicename="$5000 - $10,000" value="$5000 - $10,000" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[3]" data-nicename="$10,000 - $20,000" value="$10,000 - $20,000" data-validate="radio">
+                            </div>
+                            <div class="radio-wrap">
+                                <input type="radio" name="field[3]" data-error="Please select an option." data-nicename="$20,000+" value="$20,000+" data-validate="radio">
+                            </div><div class="field-error hidden">Please select an option.</div>
+            
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary " value="Back" data-prev="">
+                                <input type="button" class="btn btn-primary " value="Next" data-next="">
+                            </div>
+                        </step-item>
+                        <step-item class="step" valid="false" index="7">
+                            <label class="mb-4" for="questions">Any questions?</label>
+                            <textarea type="text" name="field[5]" placeholder="Any questions?"></textarea>
+                            <div class="button-wrap d-flex gap-2 ">
+                                <input type="button" class="btn btn-primary mb-0" value="Back" data-prev="">
+                                <input type="submit" class="btn btn-primary " value="SUBMIT" data-submit="">
+                            </div>
+                        </step-item>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer - King Kong Tag -->
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 py-4">
+                <p class="mb-0">Landing Page & Digital Marketing by King Kong</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Custom Scripts -->
+<script src="//unpkg.com/@ungap/custom-elements/es.js"></script>
+<script type="module" src="../global.js"></script>
+<script type="module" src="./questionnaire.js"></script>
+
+
+<!-- Lead Library Script -->
+<!-- <script type="text/javascript" src="https://scripts.kingkong.net.au/tracker.min.js"></script> -->
+
+<!-- Active Campaign reCAPTCHA -->
+<!-- <script type="text/javascript" src="https:////www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit"></script>
+<script>
+    window['recaptcha_callback'] = function () {
+        // Get all recaptchas in the DOM (there may be more than one form on the page).
+        var recaptchas = document.getElementsByClassName("g-recaptcha");
+        for (var i in recaptchas) {
+            // Set the recaptcha element ID, so the recaptcha can be applied to each element.
+            var recaptcha_id = "recaptcha_" + i;
+            recaptchas[i].id = recaptcha_id;
+            var el = document.getElementById(recaptcha_id);
+            if (el != null) {
+                var sitekey = el.getAttribute("data-sitekey");
+                var stoken = el.getAttribute("data-stoken");
+                grecaptcha.render(recaptcha_id, { "sitekey": sitekey, "stoken": stoken });
+            }
+        }
+    }
+</script> -->
+</body>
+</html>

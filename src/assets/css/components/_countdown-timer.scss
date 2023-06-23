@@ -1,0 +1,19 @@
+.countdown-timer {
+	margin-bottom: 30px;
+
+	.training-text {
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+@keyframes move {
+	0% {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: 50px 50px;
+	}
+}

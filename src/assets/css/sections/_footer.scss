@@ -1,0 +1,49 @@
+.footer{
+	padding-bottom: 90px;
+	color:$black;
+	&.with-border{
+		.container{
+			position: relative;
+			&:after{
+				position: absolute;
+				top: 0;
+				left: 22px;
+				right: 22px;
+				content: '';
+				height: 1px;
+				background:$black;
+				@include media-breakpoint-up(md) {
+					left: 15px;
+					right: 15px;
+				}
+			}
+		}
+	}
+	&.bg-dark{
+		color:$white;
+		a{
+			color:$white;
+		}
+	}
+	a{
+		color: $black;
+		position: relative; 
+	}
+	p{
+		font-size: 14px;
+		@include media-breakpoint-up(lg) {
+			font-size: 17px;
+		}
+	}
+	.holder{ 
+		width:80px;
+		margin-bottom: 10px;
+		padding-top: 40px;
+		@include media-breakpoint-up(lg) {
+			padding-top: 80px;
+			width: 114px;
+			margin-bottom: 20px;
+			padding-top: 120px;
+		}
+	}
+}
